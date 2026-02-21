@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kiruthika Devi — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <meta name="description" content="Portfolio of Kiruthika Devi — Engineering student. Projects, internships, skills, and contact.">
+  <style>
+    :root{
+      --bg:#0b0b0b;
+      --card:#121212;
+      --accent:#bdbdbd;
+      --muted:#9a9a9a;
+      --glass: rgba(255,255,255,0.03);
+      --maxw:1100px;
+      --radius:14px;
+      font-family: 'Inter', system-ui;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#050505 0%, #0f0f0f 100%);
+      color:var(--accent);
+      padding:32px 20px;
+      display:flex;
+      justify-content:center;
+    }
+    .container{
+      width:100%;
+      max-width:var(--maxw);
+      background:rgba(255,255,255,0.02);
+      border-radius:18px;
+      padding:28px;
+      box-shadow:0 8px 30px rgba(0,0,0,0.6);
+      display:grid;
+      grid-template-columns:360px 1fr;
+      gap:28px;
+      border:1px solid rgba(255,255,255,0.04);
+    }
+    .profile-card{
+      background:var(--card);
+      padding:22px;
+      border-radius:12px;
+      position:sticky;
+      top:32px;
+    }
+    .photo{width:100%;aspect-ratio:3/4;border-radius:10px;overflow:hidden}
+    .photo img{width:100%;height:100%;object-fit:cover}
+    h1{font-size:1.4rem;margin:14px 0 4px 0;color:#fff}
+    .muted{color:var(--muted);font-size:0.95rem}
+    .contact-list{margin-top:14px;display:flex;flex-direction:column;gap:8px}
+    .contact-list a{
+      color:var(--accent);text-decoration:none;padding:10px;border-radius:8px;
+      transition:all .18s ease;
+    }
+    .contact-list a:hover{transform:translateY(-3px);background:rgba(255,255,255,0.05)}
+    .btn{
+      display:inline-block;margin-top:10px;background:transparent;
+      border:1px solid rgba(255,255,255,0.08);color:var(--accent);
+      padding:10px 12px;border-radius:10px;text-decoration:none;font-weight:600;
+    }
+    section.card{margin-bottom:16px}
+    section.card h2{margin:0 0 10px 0;color:#fff;font-size:1.05rem}
+    .skills-grid{display:flex;flex-wrap:wrap;gap:8px}
+    .skill-pill{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:10px;font-size:0.92rem}
+    .timeline{display:flex;flex-direction:column;gap:12px}
+    .time-item{display:flex;gap:14px}
+    .time-left{min-width:110px;color:var(--muted);font-size:0.92rem}
+    .time-body{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px}
+    .project-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .project{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px}
+    .project h3{margin:0 0 6px 0;color:#fff;font-size:0.98rem}
+    .project p{margin:0;color:var(--muted);font-size:0.92rem}
+    footer{margin-top:18px;display:flex;justify-content:space-between;color:var(--muted);font-size:0.9rem}
+    @media(max-width:960px){.container{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="profile-card">
+      <div class="photo"><img src="profile.jpg" alt="Photo of Kiruthika Devi"></div>
+      <h1>Kiruthika Devi</h1>
+      <div class="muted">Engineering Student — Panimalar Engineering College</div>
+      <div class="contact-list">
+        <a href="mailto:devikiruthika74@gmail.com">📧 devikiruthika74@gmail.com</a>
+        <a href="https://www.linkedin.com/feed/?trk=sem-ga_campid.14650114788_asid.150089839322_crid.656569072783_kw.www%20linkedin_d.c_tid.kwd-2246447582_n.g_mt.e_geo.9061890" target="_blank">🔗 LinkedIn</a>
+        <a href="https://github.com/kiruthika-130706" target="_blank">💻 GitHub</a>
+        <a class="btn" href="kiruthik_Resume.pdf" download>Download Resume</a>
+      </div>
+    </aside>
+    <main>
+      <section class="card about">
+        <h2>About</h2>
+        <p>I am a punctual and motivated IT student studying at 
+          <a href="https://www.panimalar.edu.in" target="_blank">Panimalar Engineering College</a>.
+          I enjoy team collaboration, developing web apps, and applying my learning to real-world projects.</p>
+      </section>
+      <section class="card">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-pill">C (Basic)</div>
+          <div class="skill-pill">Python (Basic)</div>
+          <div class="skill-pill">Java (Intermediate)</div>
+          <div class="skill-pill">HTML / CSS / JS</div>
+          <div class="skill-pill">SQL</div>
+        </div>
+      </section>
+      <section class="card">
+        <h2>Internships</h2>
+        <div class="timeline">
+          <div class="time-item">
+            <div class="time-left">Dec 2023 – Jan 2024</div>
+            <div class="time-body"><strong>Paysmart Payment Technologies Pvt. Ltd.</strong><br>Learned fundamentals of web development.</div>
+          </div>
+          <div class="time-item">
+            <div class="time-left">Dec 2024</div>
+            <div class="time-body"><strong>Retech Solutions</strong><br>Worked on front-end and learned teamwork.</div>
+          </div>
+          <div class="time-item">
+            <div class="time-left">Jun – Jul 2025</div>
+            <div class="time-body"><strong>Codetech (Online)</strong><br>Explored full-stack development remotely.</div>
+          </div>
+        </div>
+      </section>
+      <section class="card">
+        <h2>Projects</h2>
+        <div class="project-list">
+          <div class="project">
+            <h3>Authentic Products App</h3>
+            <p>Helps farmers sell directly to consumers.</p>
+          </div>
+          <div class="project">
+            <h3>GK Champs</h3>
+            <p>Website to improve students' general knowledge with quizzes and certificates.</p>
+          </div>
+          <div class="project">
+            <h3>Online Learning Platform</h3>
+            <p>Platform for college students to learn programming courses.</p>
+          </div>
+          <div class="project">
+            <h3>Collaborative Document Editor</h3>
+            <p>Browser-based real-time editor with localStorage support.</p>
+          </div>
+        </div>
+      </section>
+      <section class="card">
+        <h2>Certifications</h2>
+        <ul>
+          <li>IIT Madras – Python Workshop</li>
+          <li>Oracle – Generative AI</li>
+          <li>NASSCOM – Acquiring Data</li>
+          <li>NPTEL – Data Science & Java</li>
+          <li>AWS – Cloud, ML, Generative AI</li>
+        </ul>
+      </section>
+      <section class="card">
+        <h2>Contact</h2>
+        <p>Reach me via email or connect on LinkedIn / GitHub.</p>
+      </section>
+      <footer>
+        <div>© 2026 Kiruthika Devi</div>
+        <div><a href="#top">Back to top</a></div>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
